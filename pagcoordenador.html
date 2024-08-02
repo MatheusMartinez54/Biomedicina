@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordenador</title>
+    <style>
+        body {
+            background-color: #e8f5e9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-size: 1.8rem;
+            color: #2e7d32;
+        }
+
+        .sidebar .user {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .user .button {
+            background-color: #66bb6a;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .sidebar .user p {
+            margin: 0;
+            color: #2e7d32;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: #2e7d32;
+            text-decoration: none;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            background-color: #e0f2f1;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content h1 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #2e7d32;
+        }
+
+        .content .button {
+            display: inline-block;
+            padding: 15px 30px;
+            /* background-color: #66bb6a; */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .content .button:hover {
+            background-color: #20b828;
+        }
+
+        .stethoscope {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+
+        .stethoscope:hover {
+            opacity: 1;
+        }
+
+        .stethoscope path {
+            stroke: #66bb6a;
+            stroke-width: 2px;
+            fill: none;
+        }
+
+        .card {
+    background-color: #7ecb5f; /* Verde claro */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Biomedicina</h2>
+        <div class="user">
+            <div class="button">C</div>
+            <div>
+                <p>Crisdayane</p>
+                <p>Coordenador</p>
+            </div>
+        </div>
+        <a href="index.php">Início</a>
+        
+    
+    </div>
+    <div class="content">
+
+         <!-- <h1>Aprovação</h1> -->
+          <br>
+
+        
+
+        <div class="card">
+             <a href="resultados.php" class="button">Amostras Cadastradas</a>
+        </div>
+
+        <div class="card">
+            <a href="search.html" class="button">Localizar Paciente</a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="button">Resultados</a>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
